@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Test Cases should render header 1`] = `
+<div
+  className="sc-bdVaJa fLzqRk"
+>
+  <div>
+    <h1
+      className="sc-bwzfXH gnFxWj"
+    >
+      Block One
+    </h1>
+  </div>
+</div>
+`;

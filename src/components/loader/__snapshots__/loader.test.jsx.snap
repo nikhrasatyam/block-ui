@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader Test Cases should render loader when showLoader is falsy 1`] = `null`;
+
+exports[`Loader Test Cases should render loader when showLoader is truthy 1`] = `
+<div
+  className="sc-bdVaJa kuxarL"
+>
+  <i
+    aria-hidden="true"
+    className="circle notched loading icon"
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`Loader Test Cases should render loader when showLoader is truthy 2`] = `
+<div
+  className="sc-bdVaJa kuxarL"
+>
+  <i
+    aria-hidden="true"
+    className="circle notched loading icon"
+    onClick={[Function]}
+  />
+</div>
+`;

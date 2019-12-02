@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert Test Cases should render alert component when uiStore.alert is defined 1`] = `
+<div
+  className="ui small positive message"
+>
+  <i
+    aria-hidden="true"
+    className="close icon"
+    onClick={[Function]}
+  />
+  <div
+    className="header"
+  >
+    success
+  </div>
+  <p>
+    test
+  </p>
+</div>
+`;
+
+exports[`Alert Test Cases should render alert component when uiStore.alert is undefined 1`] = `null`;
