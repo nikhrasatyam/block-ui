@@ -8,7 +8,7 @@ import blockListMock from '../../mocks/blockList.mock';
 
 import BlockList from './block.list';
 
-describe('Alert Test Cases', () => {
+describe('BlockList Test Cases', () => {
   let uiStore;
   let blockStore;
   beforeEach(async () => {
@@ -37,7 +37,6 @@ describe('Alert Test Cases', () => {
 
   test('should not display table and button when list is empty', async () => {
     const wrapper = Enzyme.mount(<Provider uiStore={uiStore} blockStore={blockStore}><BlockList /></Provider>);
-    console.log(wrapper.debug());
     expect(wrapper.find('Button')).toHaveLength(0);
     expect(wrapper.find('TableExpandable')).toHaveLength(0);
   });
@@ -50,17 +49,12 @@ describe('Alert Test Cases', () => {
 
   test('should set the loading button disabled when showLoader is truthy', async () => {
     blockStore.setBlockList(blockListMock);
-    uiStore.setShowLoader(true);
     const wrapper = Enzyme.mount(<Provider uiStore={uiStore} blockStore={blockStore}><BlockList /></Provider>);
     let button = wrapper.find('Button');
-    console.log(wrapper.debug());
     expect(button).toHaveLength(1);
-    expect(button.props().disabled).toBeTruthy();
-    button.simulate('click');
-    button.update();
-    console.log(button.debug());
-    expect(uiStore.showLoader).toBeFalsy();
-
+    expect(button.props().disabled).toBeFalsy();
+    uiStore.setShowLoader(true);
+    wrapper.update();
     button = wrapper.find('Button');
     expect(button.props().disabled).toBeTruthy();
   });
@@ -68,7 +62,7 @@ describe('Alert Test Cases', () => {
   test('should update the blockStore when loading button is clicked', async () => {
     blockStore.setBlockList(blockListMock);
     const wrapper = Enzyme.mount(<Provider uiStore={uiStore} blockStore={blockStore}><BlockList /></Provider>);
-    let button = wrapper.find('Button');
+    const button = wrapper.find('Button');
     expect(button).toHaveLength(1);
     expect(button.props().disabled).toBeFalsy();
     button.simulate('click');

@@ -20,4 +20,4 @@ exports[`Alert Test Cases should render alert component when uiStore.alert is de
 </div>
 `;
 
-exports[`Alert Test Cases should render alert component when uiStore.alert is undefined 1`] = `null`;
+exports[`Alert Test Cases should render alert component when uiStore.alert.message is empty 1`] = `null`;

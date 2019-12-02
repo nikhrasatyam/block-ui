@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Alert Test Cases should render BlockList when list has data 1`] = `
+exports[`BlockList Test Cases should render BlockList when list has data 1`] = `
 Array [
   <button
     className="ui primary button"
@@ -9,120 +9,116 @@ Array [
     Load
   </button>,
   <div
-    className="sc-bdVaJa fePDys"
+    className="react-bootstrap-table"
   >
-    <div
-      className="react-bootstrap-table"
+    <table
+      className="table table-bordered"
     >
-      <table
-        className="table table-bordered"
-      >
-        <thead>
-          <tr>
-            <th
-              className="sortable"
-              onClick={[Function]}
-              style={
-                Object {
-                  "textAlign": "center",
-                  "width": "50%",
-                }
-              }
-              tabIndex={0}
-            >
-              Id
-              <span
-                className="order"
-              >
-                <span
-                  className="dropdown"
-                >
-                  <span
-                    className="caret"
-                  />
-                </span>
-                <span
-                  className="dropup"
-                >
-                  <span
-                    className="caret"
-                  />
-                </span>
-              </span>
-            </th>
-            <th
-              className="sortable"
-              onClick={[Function]}
-              tabIndex={0}
-            >
-              Timestamp
-              <span
-                className="order"
-              >
-                <span
-                  className="dropdown"
-                >
-                  <span
-                    className="caret"
-                  />
-                </span>
-                <span
-                  className="dropup"
-                >
-                  <span
-                    className="caret"
-                  />
-                </span>
-              </span>
-            </th>
-            <th
-              className="sortable"
-              onClick={[Function]}
-              tabIndex={0}
-            >
-              Actions
-              <span
-                className="order"
-              >
-                <span
-                  className="dropdown"
-                >
-                  <span
-                    className="caret"
-                  />
-                </span>
-                <span
-                  className="dropup"
-                >
-                  <span
-                    className="caret"
-                  />
-                </span>
-              </span>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr
-            className=""
+      <thead>
+        <tr>
+          <th
+            className="sortable"
             onClick={[Function]}
-            style={Object {}}
+            style={
+              Object {
+                "textAlign": "center",
+                "width": "50%",
+              }
+            }
+            tabIndex={0}
           >
-            <td>
-              0585a09436e9b458890f59a35dceb202847b0944e76718ff768fe09938547c79
-            </td>
-            <td>
-              2019-11-30T23:56:43.500
-            </td>
-            <td>
-              28
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+            Id
+            <span
+              className="order"
+            >
+              <span
+                className="dropdown"
+              >
+                <span
+                  className="caret"
+                />
+              </span>
+              <span
+                className="dropup"
+              >
+                <span
+                  className="caret"
+                />
+              </span>
+            </span>
+          </th>
+          <th
+            className="sortable"
+            onClick={[Function]}
+            tabIndex={0}
+          >
+            Timestamp
+            <span
+              className="order"
+            >
+              <span
+                className="dropdown"
+              >
+                <span
+                  className="caret"
+                />
+              </span>
+              <span
+                className="dropup"
+              >
+                <span
+                  className="caret"
+                />
+              </span>
+            </span>
+          </th>
+          <th
+            className="sortable"
+            onClick={[Function]}
+            tabIndex={0}
+          >
+            Actions
+            <span
+              className="order"
+            >
+              <span
+                className="dropdown"
+              >
+                <span
+                  className="caret"
+                />
+              </span>
+              <span
+                className="dropup"
+              >
+                <span
+                  className="caret"
+                />
+              </span>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          className=""
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <td>
+            0585a09436e9b458890f59a35dceb202847b0944e76718ff768fe09938547c79
+          </td>
+          <td>
+            2019-11-30T23:56:43.500
+          </td>
+          <td>
+            28
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>,
 ]
 `;
 
-exports[`Alert Test Cases should render BlockList when list is empty 1`] = `null`;
+exports[`BlockList Test Cases should render BlockList when list is empty 1`] = `null`;
