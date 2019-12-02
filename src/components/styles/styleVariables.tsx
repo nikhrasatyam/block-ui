@@ -6,10 +6,8 @@ export const colors = {
 export const fontSizes = {
   xSmall: '.9rem',
   small: '1rem',
-  medium: '1.3125rem',
-  large: '1.3125rem',
+  medium: '1.3rem',
 };
-
 
 export const spacing = {
   xSmall: '.25rem',
